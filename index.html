@@ -6,59 +6,50 @@
 </head>
 <body>
   <header class="main-header">
-    <div class="main-header__bar container">
-      <a href="#" class="bar-logo">Техномарт</a>
-      <form action="" method="get">
-        <input type="text" name="search" placeholder="Поиск">
-        <input type="submit">
+    <div class="first-row container">
+      <a class="logo">Техномарт</a>
+      <form action="/echo" method="gt" class="search">
+        <input type="text" class="search-text" placeholder="Поиск:">
+        <button class="search-button"></button>
       </form>
-      <span class="bar-bookmarks">Закладки: 0</span>
-      <span class="bar-cart">Корзина: 0</span>
-      <a href="#" class="bar-link">Оформить заказ</a>
+      <ul class="tabs">
+        <li class="tab"><a href="#" class="bookmarks">Закладки: 0</a></li>
+        <li class="tab"><a href="#" class="cart">Корзина: 0</a></li>
+        <li class="tab"><a href="#" class="order">Оформить заказ</a></li>
+      </ul>
     </div>
-    <!-- /.main-header-bar-->
-    <div class="main-header__content container">
-      <p class="content-text">Интернет-магазин строительных материалов и инструментов для ремонта</p>
-      <div class="content-contacts">
-        <p class="contacts-tel">
+    <!-- /.first-row -->
+    <div class="content container">
+      <p class="title">
+        Интернет магазин
+        строительных материалов<br>
+        и инструментов для ремонта
+      </p>
+      <div class="contacts">
+        <p class="telephone">
           +7 (812) 555-05-55
         </p>
-        <p class="contacts-address">
-          г.Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
+        <p class="adress">
+          г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8
         </p>
       </div>
-      <div class="user-block">
-        <a href="#" class="user-block__login">Войти</a>
-        <a href="#" class="user-block__sign-up">Регистрация</a>
-      </div>
-    </div>
-    <!-- /.main-header-content -->
-    <nav class="main-nav container">
-      <ul>
-        <li>
-          <a href="#" class="main-nav__link">Главная</a>
-        </li>
-        <li>
-          <a href="#" class="main-nav__link">Компания</a>
-        </li>
-        <li>
-          <a href="#" class="main-nav__link">Каталог</a>
-        </li>
-        <li>
-          <a href="#" class="main-nav__link">Новости</a>
-        </li>
-        <li>
-          <a href="#" class="main-nav__link">Спецпредложения</a>
-        </li>
-        <li>
-          <a href="#" class="main-nav__link">Доставка</a>
-        </li>
-        <li>
-          <a href="#" class="main-nav__link">Контакты</a>
-        </li>
+      <ul class="user-block">
+        <li class="user-block-item"><a href="#" class="log-in">Войти</a></li>
+        <li class="user-block-item"><a href="#" class="sign-in">Регистрация</a></li>
       </ul>
-    </nav>
+      <nav class="main-navigation">
+        <ul>
+          <li><a>Главная</a></li>
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Спецпредложения</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /.content -->
   </header>
-  <!-- /.main-header -->
 </body>
 </html>
