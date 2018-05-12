@@ -13,11 +13,11 @@
         <button class="search-button"></button>
       </form>
       <ul class="tabs">
-        <li class="tab bookmarks">
-          Закладки: 0
+        <li class="tab">
+          <a href="#" class="bookmarks">Закладки: <span>0</span></a>
         </li>
-        <li class="tab cart">
-          Корзина: 0
+        <li class="tab">
+          <a href="#" class="cart">Корзина: <span>0</span></a>
         </li>
         <li class="tab">
           <a href="#" class="order">Оформить заказ</a>
@@ -75,5 +75,55 @@
     </div>
     <!-- /.content -->
   </header>
+  <main>
+    <!-- <h1 class="hidden">Интернет магазин Техномарт</h1> -->
+    <section class="intro">
+      <!-- <h2 class="hidden">Основные разделы товаров</h2> -->
+      <ul class="goods container">
+        <li class="goods-item">
+          <h3 class="goods-title">Материалы</h3>
+          <a href="#" class="goods-button">На любой вкус</a>
+        </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Инструмент</h3>
+          <a href="#" class="goods-button">На все случаи</a>
+        </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Техника</h3>
+          <a href="#" class="goods-button">Для стройки</a>
+        </li>
+        <li class="goods-item slider">
+          <div class="slider-navigation">
+            <button class="arrow-prev"></button>
+            <button class="arrow-next"></button>
+            <div class="slider-navigation-toggle">
+              <input type="radio" name="toggle" id="toggle-1">
+              <input type="radio" name="toggle" id="toggle-2" checked>
+            </div>
+          </div>
+          <div class="slide" id="slide-1">
+            <img src="image/slider-img1.jpg" height="" width="" alt="">
+            <h3 class="slide-title">Дрели</h3>
+            <p class="slide-text">Соседям на радость</p>
+            <a href="#" class="slide-button">Открыть каталог</a>
+          </div>
+          <div class="slide" id="slide-2">
+            <img src="image/slider-img1.jpg" height="" width="" alt="">
+            <h3 class="slide-title">Дрели</h3>
+            <p class="slide-text">Соседям на радость</p>
+            <a href="#" class="slide-button">Открыть каталог</a>
+          </div>
+        </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Скидки 50%</h3>
+          <a href="#" class="goods-button">На <span>350</span> товаров</a>
+        </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Доставка</h3>
+          <a href="#" class="goods-button">Бесплатно</a>
+        </li>
+      </ul>
+    </section>
+  </main>
 </body>
 </html>
