@@ -3,26 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <title>Техномарт</title>
+  <link href="https://fonts.googleapis.com/css?family=Cuprum|PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
-    <div class="header-first-line container">
-      <a class="logo">Техномарт</a>
-      <form action="/echo" method="get" class="search-form">
-        <input type="text" class="search-text" placeholder="Поиск:">
-        <button class="search-button"></button>
-      </form>
-      <ul class="tabs">
-        <li class="tab">
-          <a href="#" class="bookmarks">Закладки: <span>0</span></a>
-        </li>
-        <li class="tab">
-          <a href="#" class="cart">Корзина: <span>0</span></a>
-        </li>
-        <li class="tab">
-          <a href="#" class="order">Оформить заказ</a>
-        </li>
-      </ul>
+    <div class="header-first-line">
+      <div class="container">
+        <a class="logo">Техномарт</a>
+        <form action="/echo" method="get" class="search-form">
+          <button class="search-button"></button>
+          <input type="text" class="search-text" placeholder="Поиск:">
+        </form>
+        <ul class="tabs">
+          <li class="tab-item">
+            <a href="#" class="tab-link bookmarks">Закладки: <span>0</span></a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tab-link cart">Корзина: <span>0</span></a>
+          </li>
+          <li class="tab-item">
+            <a href="#" class="tab-link order">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.container -->
     </div>
     <!-- /.header-first-line -->
     <div class="header-content container">
@@ -50,7 +56,7 @@
     </div>
     <!-- /.header-content -->
     <nav class="main-navigation container">
-      <ul>
+      <ul class="site-navigation">
         <li><a>Главная</a></li>
         <li><a href="#">Компания</a></li>
         <li><a href="catalog.html">Каталог</a></li>
@@ -114,7 +120,7 @@
     <section class="popular-goods">
       <header class="title container">
         <h2>Популярные товары:</h2>
-        <a href="#" class="button title-button">Все популярные товары</a>
+        <a href="#" class="button">Все популярные товары</a>
       </header>
       <ol class="list container">
         <li class="list-item">
@@ -175,7 +181,7 @@
     <section class="popular-brands">
       <header class="title container">
         <h2>Популярные производители:</h2>
-        <a href="#" class="button title-button">Все производители</a>
+        <a href="#" class="button">Все производители</a>
       </header>
       <ol class="list container">
         <li class="list-item">

@@ -1,0 +1,93 @@
+body {
+  padding: 0;
+  margin: 0;
+
+  font-family: 'Cuprum', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+}
+
+.main-header {
+  background-color: #f1f5f7;
+}
+
+.header-first-line {
+  font-size: 17px;
+  color: #ffffff;
+
+  background-color: #293449;
+}
+
+.header-first-line .logo {
+  font-size: 24px;
+  text-transform: uppercase;
+
+  background-color: #ee3643;
+}
+
+.header-first-line .logo:hover {
+  background-color: #ca2c37;
+}
+
+.header-first-line .logo:active {
+  background-color: #ba2732;
+}
+
+.header-first-line .search-text {
+  font: inherit;
+  color: #000000;
+
+  background-color: transparent;
+  border: none;
+  outline: none;
+}
+
+.header-first-line .search-text::placeholder {
+  color: #ffffff;
+}
+
+.header-first-line .search-text:hover,
+.header-first-line .tab-link:hover {
+  background-color: #212a3a;
+}
+
+.header-first-line .search-text:focus {
+  background-color: #ffffff;
+}
+
+.header-first-line .tabs,
+.header-content .user-block,
+.site-navigation {
+  list-style: none;
+}
+
+.header-first-line .tab-item:nth-child(1) .tab-link {
+  background-color: #63a63e;
+}
+
+.header-first-line .tab-item:nth-child(1) .tab-link:hover {
+  background-color: #5fbb2d;
+}
+
+.header-first-line .tab-link:active {
+  color: rgba(255, 255, 255, 0.6);
+
+  background-color: #161d29;
+}
+
+.header-first-line .tab-item:nth-child(1) .tab-link:active {
+  color: rgba(255, 255, 255, 0.51);
+
+  background-color: #518534;
+}
+
+.header-first-line .tab-link {
+  color: #ffffff;
+}
+
