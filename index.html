@@ -67,11 +67,11 @@
       </ul>
     </nav>
   </header>
-  <main>
+  <main class="container">
     <!-- <h1 class="hidden">Интернет магазин Техномарт</h1> -->
     <section class="intro">
       <!-- <h2 class="hidden">Основные разделы товаров</h2> -->
-      <ul class="goods container">
+      <ul class="goods">
         <li class="goods-item">
           <h3 class="goods-title">Материалы</h3>
           <a href="#" class="button goods-button">На любой вкус</a>
@@ -84,6 +84,14 @@
           <h3 class="goods-title">Техника</h3>
           <a href="#" class="button goods-button">Для стройки</a>
         </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Скидки 50%</h3>
+          <a href="#" class="button goods-button">На <span>350</span> товаров</a>
+        </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Доставка</h3>
+          <a href="#" class="button goods-button">Бесплатно</a>
+        </li>
         <li class="goods-item slider">
           <div class="slider-navigation">
             <button class="arrow-prev"></button>
@@ -95,8 +103,8 @@
           </div>
           <div class="slide" id="slide-1">
             <img src="image/slider-img1.jpg" height="" width="" alt="">
-            <h3 class="slide-title">Дрели</h3>
-            <p class="slide-text">Соседям на радость</p>
+            <h3 class="slide-title">Перфораторы</h3>
+            <p class="slide-text">Настоящие мужские игрушки</p>
             <a href="#" class="button slide-button">Открыть каталог</a>
           </div>
           <div class="slide" id="slide-2">
@@ -106,84 +114,75 @@
             <a href="#" class="button slide-button">Открыть каталог</a>
           </div>
         </li>
-        <li class="goods-item">
-          <h3 class="goods-title">Скидки 50%</h3>
-          <a href="#" class="button goods-button">На <span>350</span> товаров</a>
-        </li>
-        <li class="goods-item">
-          <h3 class="goods-title">Доставка</h3>
-          <a href="#" class="button goods-button">Бесплатно</a>
-        </li>
       </ul>
     </section>
     <!-- /.intro -->
     <section class="popular-goods">
-      <header class="title container">
-        <h2>Популярные товары:</h2>
+      <header>
+        <h2 class="header-title">Популярные товары:</h2>
         <a href="#" class="button">Все популярные товары</a>
       </header>
-      <ol class="list container">
-        <li class="list-item">
-          <img src="img/popular-goods-img1.png" width="" height="" alt="Bosch bfg 9000" class="list-img">
-          <h3 class="list-title">
+      <ol class="goods-list">
+        <li class="goods-card">
+          <img src="img/popular-goods-img1.png" width="144" height="128" alt="Bosch bfg 9000" class="img">
+          <h3 class="title">
             Перфоратор <span>Bosch</span><br><span>bfg 9000</span>
           </h3>
-          <p class="list-old-price">32500 р.</p>
-          <p class="list-new-price">25500 р.</p>
+          <p class="old-price">32500 р.</p>
+          <p class="button new-price-button">25500 р.</p>
           <!-- Блок появляется при наведении курсора -->
-          <div class="action-block">
-            <a href="#" class="button action-block-buy">Купить</a>
-            <a href="#" class="button action-block-bookmarks">В закладки</a>
+          <div class="hidden-buttons">
+            <a href="#" class="button buy-button">Купить</a>
+            <button class="button bookmarks-button">В закладки</button>
           </div>
         </li>
-        <li class="list-item">
-          <img src="img/popular-goods-img2.png" width="" height="" alt="Bosch bfg 3000" class="list-img">
-          <h3 class="list-title">
+        <li class="goods-card">
+          <img src="img/popular-goods-img2.png" width="144" height="128" alt="Bosch bfg 3000" class="img">
+          <h3 class="title">
             Перфоратор <span>Bosch</span><br><span>bfg 3000</span>
           </h3>
-          <p class="list-old-price">22500 р.</p>
-          <p class="list-new-price">15500 р.</p>
+          <p class="old-price">22500 р.</p>
+          <p class="button new-price-button">15500 р.</p>
           <!-- Блок появляется при наведении курсора -->
-          <div class="action-block">
-            <a href="#" class="button action-block-buy">Купить</a>
-            <a href="#" class="button action-block-bookmarks">В закладки</a>
+          <div class="hidden-buttons">
+            <a href="#" class="button buy-button">Купить</a>
+            <button class="button bookmarks-button">В закладки</button>
           </div>
         </li>
-        <li class="list-item">
-          <img src="img/popular-goods-img3.png" width="" height="" alt="Bosch bfg 6000" class="list-img">
-          <h3 class="list-title">
+        <li class="goods-card">
+          <img src="img/popular-goods-img3.png" width="144" height="128" alt="Bosch bfg 6000" class="img">
+          <h3 class="title">
             Перфоратор <span>Bosch</span><br><span>bfg 6000</span>
           </h3>
-          <p class="list-old-price">30500 р.</p>
-          <p class="list-new-price">25500 р.</p>
+          <p class="old-price">30500 р.</p>
+          <p class="button new-price-button">25500 р.</p>
           <!-- Блок появляется при наведении курсора -->
-          <div class="action-block">
-            <a href="#" class="button action-block-buy">Купить</a>
-            <a href="#" class="button action-block-bookmarks">В закладки</a>
+          <div class="hidden-buttons">
+            <a href="#" class="button buy-button">Купить</a>
+            <button class="button bookmarks-button">В закладки</button>
           </div>
         </li>
-        <li class="list-item">
-          <img src="img/popular-goods-img4.png" width="" height="" alt="Bosch bfg 2000" class="list-img">
-          <h3 class="list-title">
+        <li class="goods-card">
+          <img src="img/popular-goods-img4.png" width="144" height="128" alt="Bosch bfg 2000" class="img">
+          <h3 class="title">
             Перфоратор <span>Bosch</span><br><span>bfg 2000</span>
           </h3>
-          <p class="list-old-price"></p>
-          <p class="list-new-price">12500 р.</p>
+          <p class="button new-price-button">12500 р.</p>
           <!-- Блок появляется при наведении курсора -->
-          <div class="action-block">
-            <a href="#" class="button action-block-buy">Купить</a>
-            <a href="#" class="button action-block-bookmarks">В закладки</a>
+          <div class="hidden-buttons">
+            <a href="#" class="button buy-button">Купить</a>
+            <button class="button bookmarks-button">В закладки</button>
           </div>
         </li>
       </ol>
     </section>
     <!-- /.popular-goods -->
     <section class="popular-brands">
-      <header class="title container">
-        <h2>Популярные производители:</h2>
-        <a href="#" class="button">Все производители</a>
+      <header>
+        <h2 class="header-title">Популярные производители:</h2>
+        <a href="#" class="button popular-brands-button">Все производители</a>
       </header>
-      <ol class="list container">
+      <ol class="list">
         <li class="list-item">
           <a href="#" class="list-link">
             <img src="img/popular-brands-img1.png" alt="bosch">
@@ -228,13 +227,14 @@
     </section>
     <!-- /.popular-brands -->
     <section class="services">
-      <header class="title container">
-        <h2>Сервисы</h2>
-        <p class="title-text">
-          Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+      <header>
+        <h2 class="header-title">Сервисы</h2>
+        <p class="header-text">
+          Хороший интернет-магазин отличается от плохого не только ценами! <br>
+          Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
       </header>
-      <div class="services-slider container">
+      <div class="services-slider">
         <div class="control">
           <input type="radio" class="hidden" name="services" id="delivery" checked>
           <label for="delivery">Доставка</label>
@@ -245,9 +245,9 @@
         </div>
         <!-- /.control -->
         <div class="content">
-          <div class="content-item">
-            <h3 class="content-title">Доставка</h3>
-            <p>
+          <div class="slide">
+            <h3 class="slide-title">Доставка</h3>
+            <p class="slide-text">
               Мы с удовольствием доставим ваш товар прямо<br>
               к вашему подъезду совершенно бесплатно!<br>
               Ведь мы неплохо заработаем,<br>
@@ -255,38 +255,39 @@
             </p>
             <img src="img/services-slider-img1.png" width="" height="" alt="Доставка">
           </div>
-          <div class="content-item">
-            <h3 class="content-title">Гарантия</h3>
-            <p>
+          <div class="slide">
+            <h3 class="slide-title">Гарантия</h3>
+            <p class="slide-text">
               Если купленный у нас товар поломается или заискрит,<br>
               а также в случае можара, спровоцированного его возгаранием,<br>
               вы всегда можете быть уверены в нашей гарантии. Мы обменяем<br>
               сгоревший товар на новый.<br>
               Дом уж восстановите как-нибудь сами.
             </p>
-            <img src="img/services-slider-img2.png" width="" height="" alt="Доставка">
+            <img src="img/services-slider-img2.png" width="" height="" alt="Гарантия">
           </div>
-          <div class="content-item">
-            <h3 class="content-title">Кредит</h3>
-            <p>
+          <div class="slide">
+            <h3 class="slide-title">Кредит</h3>
+            <p class="slide-text">
               Залезть в долговую яму стало проще!<br>
               Кедитные консультанты придут вам на помощь.
             </p>
-            <img src="img/services-slider-img3.png" width="" height="" alt="Доставка">
+            <img src="img/services-slider-img3.png" width="" height="" alt="Кредит">
           </div>
         </div>
         <!-- /.content -->
       </div>
     </section>
     <!-- /.services -->
-    <div class="info container">
+    <div class="info">
       <section class="about-company">
         <h2 class="title">Компания «Техномарт»</h2>
         <p class="text">
-          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
+          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и <br>
+          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
         </p>
         <p class="text">
-          Мы можем доставить ваш товар в самые отдаленные точки России!
+          Мы можем доставить ваш товар в самые отдаленные точки России! <br>
           Техномарт работает со многими транспортными компаниями:
         </p>
         <ul class="transport-company">
@@ -306,7 +307,8 @@
       <section class="info-contacts">
         <h2 class="title">Контакты</h2>
         <p class="text">
-          Вы можете забрать товар сами, заехав в наш офис:
+          Вы можете забрать товар сами, <br>
+          заехав в наш офис:
         </p>
         <img src="img/contacts-map.png" width="" height="" alt="Карта с расположением офиса">
         <a href="#" class="button info-contacts-button">Заблудились? Напишите нам!</a>
@@ -359,7 +361,7 @@
     </div>
     <!-- /.footer-third-line -->
   </footer>
-  <section class="feedback">
+  <section class="feedback container">
     <!-- <h2 class="hidden">Обратная связь</h2> -->
     <form action="/echo" method="post">
       <p class="form-section">

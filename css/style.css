@@ -4,7 +4,6 @@ body {
 
   font-family: 'Cuprum', sans-serif;
   font-size: 13px;
-  font-weight: 400;
   line-height: 24px;
   color: #000000;
 }
@@ -159,4 +158,196 @@ a {
 
 .main-header .site-navigation-link:active {
   color: rgba(255, 255, 255, 0.5);
+}
+
+.intro .goods {
+  color: #ffffff;
+
+  list-style: none;
+}
+
+.intro .goods-item:nth-child(1) {
+  background-color: #f6b22d;
+}
+
+.intro .goods-item:nth-child(2) {
+  background-color: #4aafde;
+}
+
+.intro .goods-item:nth-child(3) {
+  background-color: #cc79d1;
+}
+
+.intro .goods-item:nth-child(4) {
+  background-color: #85d179;
+}
+
+.intro .goods-item:nth-child(5) {
+  background-color: #f6b22d;
+}
+
+.intro .goods-title {
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.button {
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #ffffff;
+
+  border: none;
+  border-radius: 3px;
+  background-color: #ee3643;
+}
+
+.button:hover {
+  background-color: #ca2c37;
+}
+
+.button:active {
+  background-color: #ba2732;
+}
+
+.intro .goods-button {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+.intro .goods-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+.intro .goods-button:active {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.intro .slide {
+  background-color: #aba29a;
+}
+
+.intro .slide-title {
+  font-size: 36px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.intro .slide-text {
+  font-size: 18px;
+}
+
+.popular-goods header,
+.popular-brands header {
+  background-color: #f7f3ec;
+}
+
+.popular-goods .header-title,
+.popular-brands .header-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+}
+
+.goods-card .title {
+  font-size: 18px;
+  line-height: 20px;
+  text-align: center;
+  color: #000000;
+}
+
+.goods-card .title span {
+  text-transform: uppercase;
+}
+
+.goods-card .old-price {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 17px;
+  line-height: 18px;
+  color: #999999;
+  text-decoration: line-through;
+  text-transform: uppercase;
+}
+
+.goods-card .button {
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.goods-card .buy-button {
+  background-color: #63a63e;
+}
+
+.goods-card .buy-button:hover {
+  background-color: #5fbb2d;
+}
+
+.goods-card .buy-button:active {
+  background-color: #518534;
+}
+
+.goods-card .bookmarks-button {
+  color: #32425c;
+
+  background-color: transparent;
+  border: 3px solid #63a63e;
+  border-radius: 3px;
+}
+
+.goods-card .bookmarks-button:hover {
+  border-color: #32425c;
+}
+
+.goods-card .bookmarks-button:active {
+  opacity: 0.3;
+}
+
+.popular-brands .list {
+  list-style: none;
+}
+
+.services .header-title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.services .header-text,
+.services-slider .slide-text {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.services-slider label {
+  font-size: 21px;
+  line-height: 30px;
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.services-slider input:checked + label {
+  color: #32425c;
+
+  background-color: #ffffff;
+}
+
+.services-slider .slide-title {
+  font-size: 36px;
+  line-height: 24px;
+  color: #32425c;
+  text-transform: uppercase;
+}
+
+.info .title {
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.info .text {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.info .transport-company {
+  font-size: 18px;
+  line-height: 20px;
+  list-style: none;
 }
