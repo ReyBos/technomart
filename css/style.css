@@ -413,3 +413,25 @@ a {
 .footer-third-line .developer-links {
   color: #ffd180;
 }
+
+.feedback {
+  line-height: 18px;
+}
+
+.feedback label {
+  font-size: 18px;
+}
+
+.feedback input,
+.feedback textarea {
+  font: inherit;
+  font-family: 'PT Sans', sans-serif;
+
+
+  border: 2px solid #d7dcde;
+  border-radius: 3px;
+}
+
+.feedback .submit {
+  background-color: #f1f1f1;
+}
