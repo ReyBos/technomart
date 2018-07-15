@@ -19,7 +19,6 @@ a {
 
 .header-first-line {
   font-size: 17px;
-  color: #ffffff;
 
   background-color: #293449;
 }
@@ -27,6 +26,7 @@ a {
 .header-first-line .logo {
   font-size: 24px;
   text-transform: uppercase;
+  color: #ffffff;
 
   background-color: #ee3643;
 }
@@ -91,3 +91,72 @@ a {
   color: #ffffff;
 }
 
+.header-content .title {
+  font-size: 16px;
+  font-style: italic;
+  line-height: 23px;
+  color: #ee3643;
+}
+
+.header-content .telephone {
+  font-size: 21px;
+  line-height: 18px;
+  color: #e9292a;
+
+  border: solid 3px #ffffff;
+}
+
+.header-content .address {
+  font-size: 14px;
+  color: #32425c;
+}
+
+.header-content .user-block-button {
+  font-size: 21px;
+  line-height: 25px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.header-content .log-in:hover,
+.header-content .sign-in:hover {
+  color: #ee3643;
+}
+
+.header-content .user-block-button:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.header-content .user-block-link {
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
+}
+
+.header-content .user-block-link:hover {
+  color: #ee3643;
+}
+
+.header-content .user-block-link:active {
+  opacity: 0.3;
+}
+
+.main-header nav {
+  background-color: #32425c;
+}
+
+.main-header .site-navigation-link {
+  font-size: 17px;
+  line-height: 17px;
+  color: #ffffff;
+}
+
+.main-header .site-navigation-link:hover {
+  background-color: #293449;
+}
+
+.main-header .site-navigation-link:active {
+  color: rgba(255, 255, 255, 0.5);
+}
