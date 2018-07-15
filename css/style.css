@@ -22,7 +22,8 @@ a {
   background-color: #293449;
 }
 
-.header-first-line .logo {
+.header-first-line .logo,
+.footer-first-line .logo {
   font-size: 24px;
   text-transform: uppercase;
   color: #ffffff;
@@ -350,4 +351,65 @@ a {
   font-size: 18px;
   line-height: 20px;
   list-style: none;
+}
+
+.main-footer {
+  color: #ffffff;
+
+  background-color: #32425c;
+}
+
+.footer-navigation,
+.goods-navigation,
+.socials {
+  list-style: none;
+}
+
+.footer-navigation a {
+  color: #ffffff;
+  font-size: 18px;
+}
+
+.footer-navigation a:hover,
+.footer-second-line a:hover {
+  text-decoration: underline;
+}
+
+.footer-navigation a:active,
+.footer-second-line a:active {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.footer-first-line .logo {
+  font-size: 30px;
+  line-height: 30px;
+}
+
+.footer-second-line .contacts {
+  font-size: 18px;
+}
+
+.footer-second-line a {
+  color: #ffd180;
+  font-size: 18px;
+}
+
+.footer-third-line {
+  font-size: 16px;
+  line-height: 18px;
+
+  background-color: #293449;
+}
+
+.footer-socials {
+  list-style: none;
+}
+
+.footer-socials a {
+  color: #ffffff;
+}
+
+.footer-third-line .developer-links {
+  color: #ffd180;
 }
