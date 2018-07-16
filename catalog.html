@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Католог товаров</title>
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans&amp;subset=cyrillic" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
 </head>
@@ -72,12 +72,12 @@
   </header>
   <main class="container">
     <ul class="breadcrumbs">
-      <li><a href="index.html">Главная</a></li>
-      <li><a href="#">Каталог</a></li>
-      <li><a href="#">Инструмент</a></li>
-      <li class="breadcrumbs-current">Перфораторы</li>
+      <li><a href="index.html" class="breadcrumbs-link">Главная</a></li>
+      <li><a href="#" class="breadcrumbs-link">Каталог</a></li>
+      <li><a href="#" class="breadcrumbs-link">Инструмент</a></li>
+      <li class="breadcrumbs-link breadcrumbs-current">Перфораторы</li>
     </ul>
-    <h1>Перфораторы</h1>
+    <h1 class="catalog-title">Перфораторы</h1>
     <section class="filter">
       <p class="title">Фильтр:</p>
       <form action="/echo" method="get">
@@ -89,13 +89,16 @@
             <div class="toggle toggle-max"></div>
             <div class="scale"></div>
           </div>
-          <input type="text" class="min-price" placeholder="0">
-          <input type="text" class="max-price" placeholder="30000">
-        </fieldset>
+          <p>
+            <input type="text" class="min-price" placeholder="0">
+            —
+            <input type="text" class="max-price" placeholder="30000">
+                    </fieldset>
+          </p>
         <!-- Фильтр по производителям -->
         <fieldset class="filter-manufacturer">
           <legend class="filter-title">Производители:</legend>
-          <ul>
+          <ul class="filter-list">
             <li>
               <label for="bosch">
                 <input type="checkbox" id="bosch" class="filter-input filter-input-checkbox" checked>Bosch
@@ -125,8 +128,8 @@
         </fieldset>
         <!-- Фильтр по типу питания -->
         <fieldset class="filter-power">
-          <fieldset>Питание:</fieldset>
-          <ul>
+          <legend class="filter-title">Питание:</legend>
+          <ul class="filter-list">
             <li>
               <label for="battery">
                 <input type="radio" class="filter-input filter-input-radio" id="battery" name="power" checked>Аккумуляторные
@@ -139,7 +142,7 @@
             </li>
           </ul>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button type="submit" class="filter-button">Показать</button>
       </form>
     </section>
     <section class="goods">
@@ -147,9 +150,9 @@
       <section class="sort">
         <p class="title">Сортировка:</p>
         <ul class="sort-type">
-          <li class="sort-item-text">По цене</li>
-          <li class="sort-item-text">По типу</li>
-          <li class="sort-item-text">По функционалу</li>
+          <li><a href="" class="sort-type-link sort-type-link_active">По цене</a></li>
+          <li><a href="" class="sort-type-link">По типу</a></li>
+          <li><a href="" class="sort-type-link">По функционалу</a></li>
         </ul>
         <ul class="sort-type">
           <li class="sort-item-arrow arrow-up"></li>
@@ -157,7 +160,7 @@
         </ul>
       </section>
       <!-- <h2 class="hidden">Список доступных перфораторов</h2> -->
-      <section class="content">
+      <section class="goods-content">
         <ul class="goods-list">
           <li class="goods-card">
             <img src="img/goods-img1.png" alt="Bosch bfg 3000" height="128" width="144" class="img">
@@ -271,11 +274,11 @@
   </main>
   <footer class="main-footer">
     <div class="footer-first-line container">
-      <a class="logo">Техномарт</a>
+      <a href="index.html" class="logo">Техномарт</a>
       <ul class="footer-navigation">
-        <li><a>Компания</a></li>
+        <li><a href="index.html">Компания</a></li>
         <li><a href="#">Новости</a></li>
-        <li><a href="catalog.html">Каталог</a></li>
+        <li><a>Каталог</a></li>
         <li><a href="#">Доставка</a></li>
         <li><a href="#">Контакты</a></li>
       </ul>
@@ -321,9 +324,12 @@
     <!-- /.footer-third-line -->
   </footer>
   <div class="modal-add-goods container">
-    <p>Товар добавлен в корзину!</p>
-    <a href="#" class="button modal-button">Оформить заказ</a>
-    <button class="button modal-button">Продолжить покупки</button>
+    <p class="title">Товар добавлен в корзину!</p>
+    <p class="buttons-group">
+      <a href="#" class="button modal-button">Оформить заказ</a>
+      <button class="button modal-button">Продолжить покупки</button>
+    </p>
+    <span class="close">X</span>
   </div>
 </body>
 </html>

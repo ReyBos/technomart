@@ -12,6 +12,8 @@ a {
   text-decoration: none;
 }
 
+/* index.html */
+
 .main-header {
   background-color: #f1f5f7;
 }
@@ -324,6 +326,10 @@ a {
   background-color: #32425c;
 }
 
+.services-slider label:hover {
+  background-color: #293449;
+}
+
 .services-slider input:checked + label {
   color: #32425c;
 
@@ -434,4 +440,169 @@ a {
 
 .feedback .submit {
   background-color: #f1f1f1;
+}
+
+/* catalog.html */
+
+.breadcrumbs {
+  list-style: none;
+}
+
+.breadcrumbs-link {
+  font: inherit;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.catalog-title {
+  font-size: 30px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+
+  background-color: #f2f6f8;
+}
+
+.filter {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.filter input {
+  font: inherit;
+}
+
+.filter .title,
+.sort .title {
+  line-height: 18px;
+  text-transform: uppercase;
+
+  background-color: #f7f3ec;
+}
+
+.filter-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+fieldset {
+  border: none;
+}
+
+.filter-cost .min-price,
+.filter-cost .max-price {
+  border: none;
+  background-color: #f7f3ec;
+}
+
+.filter-cost .min-price::placeholder,
+.filter-cost .max-price::placeholder {
+  color: #000000;
+}
+
+.filter-list,
+.goods .sort-type,
+.goods-list,
+.pagination-list {
+  list-style: none;
+}
+
+.filter label {
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.filter-button {
+  font: inherit;
+  text-transform: uppercase;
+  line-height: 18px;
+
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+}
+
+.goods .sort-type {
+  font: inherit;
+  font-family: 'PT Sans', sans-serif;
+  text-transform: uppercase;
+  line-height: 18px;
+}
+
+.goods .sort-type-link {
+  color: #ee3643;
+
+  opacity: 0.3;
+  border-bottom: dotted 1px #ee3643;
+}
+
+.goods .sort-type-link_active {
+  opacity: 1;
+  border: none;
+}
+
+.goods .sort-type-link:hover {
+  color: #000000;
+
+  opacity: 1;
+  border-bottom: solid 1px #ee3643;
+}
+
+.pagination-list a {
+  font-family: 'PT Sans', sans-serif;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.pagination-list a:hover {
+  border-color: #bdc6ca;
+}
+
+.pagination-list a:active {
+  border-color: #ee3643;
+}
+
+.pagination-item-current a {
+  color: #ffffff;
+
+  background-color: #ee3643;
+  border: none;
+}
+
+.post-scriptum .title {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.post-scriptum .content {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.modal-add-goods .title {
+  font-size: 30px;
+  line-height: 18px;
+}
+
+.modal-add-goods .buttons-group {
+  background-color: #f1f1f1;
+}
+
+.modal-add-goods button {
+  color: #000000;
+
+  background-color: #ffffff;
+}
+
+.modal-add-goods .close,
+.feedback .close {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #ee3643;
 }
