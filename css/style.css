@@ -308,6 +308,10 @@ a {
   list-style: none;
 }
 
+.popular-brands img:active {
+  opacity: 0.3;
+}
+
 .services .header-title {
   font-size: 30px;
   text-transform: uppercase;
@@ -414,10 +418,26 @@ a {
 
 .footer-socials a {
   color: #ffffff;
+
+  background-color: #212a3a;
+}
+
+.footer-socials a:hover,
+.footer-socials a:active {
+  background-color: #ee3643;
 }
 
 .footer-third-line .developer-links {
   color: #ffd180;
+}
+
+.footer-third-line .developer-links td:hover {
+  text-decoration: underline;
+}
+
+.footer-third-line .developer-links td:active {
+  color: #ee3643;
+  text-decoration: none;
 }
 
 .feedback {
