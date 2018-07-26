@@ -675,6 +675,8 @@ a {
 /* catalog.html */
 
 .breadcrumbs {
+  padding: 20px 0;
+
   list-style: none;
 }
 
@@ -685,7 +687,20 @@ a {
   color: #000000;
 }
 
+.catalog-content {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+}
+
 .catalog-title {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  padding: 30px 0;
+
   font-size: 30px;
   line-height: 30px;
   text-transform: uppercase;
@@ -695,7 +710,14 @@ a {
 }
 
 .filter {
+  width: 220px;
+
   font-family: 'PT Sans', sans-serif;
+}
+
+.filter-list {
+  margin: 0;
+  padding: 0;
 }
 
 .filter input {
@@ -703,7 +725,7 @@ a {
 }
 
 .filter .title,
-.sort .title {
+.sort-title {
   line-height: 18px;
   text-transform: uppercase;
 
@@ -754,11 +776,40 @@ fieldset {
   border: 1px solid #e5e5e5;
 }
 
+.goods {
+  width: 700px;
+  margin-left: auto;
+  margin-bottom: 33px;
+}
+
+.goods .sort {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.goods .sort-title {
+  width: 140px;
+}
+
 .goods .sort-type {
+  width: 380px;
+  margin: 0;
+  padding: 0;
+  margin-left: 100px;
+
   font: inherit;
   font-family: 'PT Sans', sans-serif;
   text-transform: uppercase;
   line-height: 18px;
+}
+
+.goods .sort-type-arrow {
+  width: 60px;
+  margin-left: auto;
 }
 
 .goods .sort-type-link {
@@ -778,6 +829,33 @@ fieldset {
 
   opacity: 1;
   border-bottom: solid 1px #ee3643;
+}
+
+.goods-list {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  -o-flex-wrap: wrap;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+
+.goods-card {
+  width: 220px;
+  margin-bottom: 20px;
+}
+
+.pagination-list {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0;
 }
 
 .pagination-list a {
@@ -805,7 +883,16 @@ fieldset {
   border: none;
 }
 
+.post-scriptum {
+  padding-bottom: 75px;
+  padding-top: 65px;
+
+  background-color: #f2f6f8;
+}
+
 .post-scriptum .title {
+  margin-bottom: 30px;
+
   font-size: 30px;
   text-transform: uppercase;
 }
