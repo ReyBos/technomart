@@ -67,9 +67,9 @@
       </ul>
     </nav>
   </header>
-  <main class="container">
+  <main>
     <!-- <h1 class="hidden">Интернет магазин Техномарт</h1> -->
-    <section class="intro">
+    <section class="intro container">
       <!-- <h2 class="hidden">Основные разделы товаров</h2> -->
       <ul class="goods">
         <li class="goods-item">
@@ -87,16 +87,6 @@
           <a href="#" class="button goods-button">Для стройки</a>
           <img src="img/goods-item-img3.png" alt="Техника" width="78" height="62">
         </li>
-        <li class="goods-item">
-          <h3 class="goods-title">Скидки 50%</h3>
-          <a href="#" class="button goods-button">На <span>350</span> товаров</a>
-          <img src="img/goods-item-img4.png" alt="Скидки" width="59" height="72">
-        </li>
-        <li class="goods-item">
-          <h3 class="goods-title">Доставка</h3>
-          <a href="#" class="button goods-button">Бесплатно</a>
-          <img src="img/goods-item-img5.png" alt="Доставка" width="78" height="63">
-        </li>
         <li class="goods-item slider">
           <div class="slider-navigation">
             <button class="arrow-prev"></button>
@@ -111,21 +101,31 @@
             <h3 class="slide-title">Перфораторы</h3>
             <p class="slide-text">Настоящие мужские игрушки</p>
             <a href="#" class="button slide-button">Открыть каталог</a>
-          </div>
+          </div><!-- второй слайд, временно отключил
           <div class="slide" id="slide-2">
             <img src="img/slider-img2.jpg" height="266" width="620" alt="">
             <h3 class="slide-title">Дрели</h3>
             <p class="slide-text">Соседям на радость</p>
             <a href="#" class="button slide-button">Открыть каталог</a>
-          </div>
+          </div>-->
+        </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Скидки 50%</h3>
+          <a href="#" class="button goods-button">На <span>350</span> товаров</a>
+          <img src="img/goods-item-img4.png" alt="Скидки" width="59" height="72">
+        </li>
+        <li class="goods-item">
+          <h3 class="goods-title">Доставка</h3>
+          <a href="#" class="button goods-button">Бесплатно</a>
+          <img src="img/goods-item-img5.png" alt="Доставка" width="78" height="63">
         </li>
       </ul>
     </section>
     <!-- /.intro -->
-    <section class="popular-goods">
+    <section class="popular-goods container">
       <header>
         <h2 class="header-title">Популярные товары:</h2>
-        <a href="#" class="button">Все популярные товары</a>
+        <a href="#" class="button header-button">Все популярные товары</a>
       </header>
       <ol class="goods-list">
         <li class="goods-card">
@@ -182,7 +182,7 @@
       </ol>
     </section>
     <!-- /.popular-goods -->
-    <section class="popular-brands">
+    <section class="popular-brands container">
       <header>
         <h2 class="header-title">Популярные производители:</h2>
         <a href="#" class="button popular-brands-button">Все производители</a>
@@ -232,21 +232,27 @@
     </section>
     <!-- /.popular-brands -->
     <section class="services">
-      <header>
+      <header class="container">
         <h2 class="header-title">Сервисы</h2>
         <p class="header-text">
           Хороший интернет-магазин отличается от плохого не только ценами! <br>
           Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
         </p>
       </header>
-      <div class="services-slider">
+      <div class="services-slider container">
         <div class="control">
-          <input type="radio" class="hidden" name="services" id="delivery" checked>
-          <label for="delivery">Доставка</label>
-          <input type="radio" class="hidden" name="services" id="guarantee">
-          <label for="guarantee">Гарантия</label>
-          <input type="radio" class="hidden" name="services" id="credit">
-          <label for="credit">Кредит</label>
+          <p>
+            <input type="radio" class="hidden" name="services" id="delivery" checked>
+            <label for="delivery">Доставка</label>
+          </p>
+          <p>
+            <input type="radio" class="hidden" name="services" id="guarantee">
+            <label for="guarantee">Гарантия</label>
+          </p>
+          <p>
+            <input type="radio" class="hidden" name="services" id="credit">
+            <label for="credit">Кредит</label>
+          </p>
         </div>
         <!-- /.control -->
         <div class="content">
@@ -259,7 +265,7 @@
               поднимая его на ваш этаж!
             </p>
             <img src="img/services-slider-img1.png" width="468" height="261" alt="Доставка">
-          </div>
+          </div> <!-- два слайда, временно отключил
           <div class="slide">
             <h3 class="slide-title">Гарантия</h3>
             <p class="slide-text">
@@ -278,13 +284,13 @@
               Кедитные консультанты придут вам на помощь.
             </p>
             <img src="img/services-slider-img3.png" width="465" height="285" alt="Кредит">
-          </div>
+          </div>    -->
         </div>
         <!-- /.content -->
       </div>
     </section>
     <!-- /.services -->
-    <div class="info">
+    <div class="info container">
       <section class="about-company">
         <h2 class="title">Компания «Техномарт»</h2>
         <p class="text">
@@ -309,7 +315,7 @@
         <a href="#" class="button about-company-button">Подробнее о компании</a>
       </section>
       <!-- /.about-company -->
-      <section class="info-contacts">
+      <section class="contacts">
         <h2 class="title">Контакты</h2>
         <p class="text">
           Вы можете забрать товар сами, <br>
@@ -323,7 +329,9 @@
   </main>
   <footer class="main-footer">
     <div class="footer-first-line container">
-      <a class="logo">Техномарт</a>
+      <p>
+        <a class="logo">Техномарт</a>
+      </p>
       <ul class="footer-navigation">
         <li><a>Компания</a></li>
         <li><a href="#">Новости</a></li>
@@ -338,12 +346,12 @@
         г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8 <br>
         +7 (812) 555-05-55
       </p>
-        <ul class="goods-navigation">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#">Техника</a></li>
-          <li><a href="#">Инструмент</a></li>
-          <li><a href="#">Спецпредложения</a></li>
-        </ul>
+      <ul class="goods-navigation">
+        <li><a href="#">Материалы</a></li>
+        <li><a href="#">Техника</a></li>
+        <li><a href="#">Инструмент</a></li>
+        <li><a href="#">Спецпредложения</a></li>
+      </ul>
     </div>
     <!-- /.footer-second-line -->
     <div class="footer-third-line">
