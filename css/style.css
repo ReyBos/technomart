@@ -21,6 +21,24 @@ a {
   padding: 0 10px;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .button {
   display: inline-block;
   padding: 10px 25px;
@@ -35,7 +53,6 @@ a {
   border: none;
   border-radius: 3px;
   cursor: pointer;
-  outline: none;
 }
 
 .button:hover {
@@ -129,7 +146,6 @@ a {
   line-height: 17px;
   border: none;
   background-color: transparent;
-  outline: none;
 }
 
 .header-first-line .search-input:hover {
@@ -645,6 +661,8 @@ a {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
+/* Слайдер для меню товаров */
+
 .goods-menu .slider {
   position: absolute;
   top: -286px;
@@ -837,7 +855,7 @@ a {
   width: 253px;
 }
 
-/* Общая стилизация карточки товара index.html */
+/* Общая стилизация карточки товара */
 
 .goods-list {
   display: -webkit-flex;
@@ -938,7 +956,6 @@ a {
 
   background-image: url(../img/svg/red-button.svg);
 }
-
 
 .goods-list .hidden-block {
   position: absolute;
