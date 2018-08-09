@@ -1976,6 +1976,360 @@ input[type="radio"].visually-hidden {
 }
 
 /* catalog.html */
-/* header */
 
+.catalog-main {
+  position: relative;
 
+  font-family: 'PT Sans', sans-serif;
+}
+
+.catalog-main .title {
+  padding: 30px;
+  margin: 0;
+  margin-bottom: 20px;
+
+  font-family: 'Cuprum', sans-serif;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #32425c;
+
+  background-color: #f2f6f8;
+}
+
+/* Хлебные крошки */
+
+.bread-crumb {
+  position: absolute;
+  top: -39px;
+  left: 10px;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.bread-crumb .item {
+  position: relative;
+
+  margin-left: 40px;
+
+  line-height: 18px;
+}
+
+.bread-crumb .item::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: 50%;
+
+  width: 8px;
+  height: 12px;
+  margin-top: -6px;
+
+  background-image: url(../img/svg/icon-right-small.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.bread-crumb .home {
+  margin-left: 0;
+}
+
+.bread-crumb .home::before {
+  content: none;
+}
+
+.bread-crumb .home-link {
+  position: relative;
+
+  display: inline-block;
+  width: 15px;
+  height: 12px;
+}
+
+.bread-crumb .home-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 15px;
+  height: 12px;
+
+  background-image: url(../img/svg/icon-home.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.bread-crumb .link {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+}
+
+.bread-crumb .current-link {
+  cursor: default;
+}
+
+/* Блок с фильтрами */
+
+.filters-block {
+  width: 220px;
+}
+
+.filters-block .title {
+  font-family: 'PT Sans', sans-serif;
+  padding: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 18px;
+  margin: 0;
+
+  font-size: 13px;
+  line-height: 18px;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.filters-block .range-filter,
+.filters-block .manufacturer-filter,
+.filters-block .power-filter {
+  padding: 0;
+  padding-bottom: 25px;
+  margin: 0;
+  margin-bottom: 16px;
+
+  border: none;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.filters-block .fieldset-title {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+
+.range-filter .fieldset-title {
+  padding-top: 11px;
+  padding-bottom: 14px;
+}
+
+.range-filter .range-control {
+  position: relative;
+
+  width: 100%;
+  height: 80px;
+  margin-bottom: 9px;
+
+  background-color: #f7f3ec;
+  border-radius: 3px;
+}
+
+.range-filter .scale {
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 50%;
+
+  width: auto;
+  height: 2px;
+  margin-top: -1px;
+
+  background-color: #d7dcde;
+}
+
+.range-filter .bar {
+  position: absolute;
+
+  width: 70%;
+  height: 2px;
+
+  background-color: #00ca74;
+}
+
+.range-filter .toggle {
+  position: absolute;
+  top: 50%;
+  left: 20px;
+
+  width: 4px;
+  height: 4px;
+  margin-top: -10px;
+
+  background-color: #ababab;
+  border-radius: 50%;
+  border: 8px solid #ffffff;
+  -webkit-box-shadow: 0 2px 0 0 rgba(0, 1, 1, 0.14);
+  box-shadow: 0 2px 0 0 rgba(0, 1, 1, 0.14);
+  cursor: pointer;
+}
+
+.range-filter .toggle-min {
+  left: 20px;
+}
+
+.range-filter .toggle-min {
+  left: 122px;
+}
+
+.range-filter .price-control {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  justify-content: space-between;
+  -ms-align-items: center;
+  align-items: center;
+}
+
+.range-filter .price-control-input {
+  width: 95px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  font-size: 17px;
+  line-height: 18px;
+  text-align: center;
+
+  border: none;
+  border-radius: 3px;
+  background-color: #f7f3ec;
+}
+
+.filters-block .manufacturer-filter {
+  padding-bottom: 26px;
+  margin-bottom: 17px;
+}
+
+.manufacturer-filter .fieldset-title {
+  margin-bottom: 13px;
+}
+
+.manufacturer-filter .list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.manufacturer-filter .list-item {
+  margin-bottom: 18px;
+}
+
+.manufacturer-filter .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.manufacturer-filter .list-input,
+.power-filter .list-input {
+  display: none;
+}
+
+.manufacturer-filter .list-label,
+.power-filter .list-label {
+  position: relative;
+
+  padding-left: 35px;
+
+  font-size: 15px;
+  line-height: 20px;
+  text-transform: uppercase;
+}
+
+.manufacturer-filter .list-label::before,
+.power-filter .list-label::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -2px;
+
+  width: 27px;
+  height: 23px;
+
+  background-image: url(../img/svg/checkbox-off.svg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+}
+
+.manufacturer-filter .list-input:checked + .list-label::before {
+  background-image: url(../img/svg/checkbox-on.svg);
+}
+
+.filters-block .power-filter {
+  padding-bottom: 0;
+  margin-bottom: 78px;
+
+  border-bottom: none;
+}
+
+.power-filter .fieldset-title {
+  margin-bottom: 14px;
+}
+
+.power-filter .list {
+  padding: 0;
+  margin: 0;
+
+  list-style: none;
+}
+
+.power-filter .list-item {
+  margin-bottom: 16px;
+}
+
+.power-filter .list-item:last-child {
+  margin-bottom: 0;
+}
+
+.power-filter .list-label::before {
+  top: -3px;
+
+  width: 25px;
+  height: 25px;
+
+  background-image: url(../img/svg/radio-off.svg);
+}
+
+.power-filter .list-input:checked + .list-label::before {
+  background-image: url(../img/svg/radio-on.svg);
+}
+
+.filters-button {
+  width: 140px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-bottom: 20px;
+
+  font-size: 13px;
+  line-height: 18px;
+  font-weight: 700;
+  color: #000000;
+
+  background-color: transparent;
+  border: 1px solid #e5e5e5;
+  border-radius: 3px;
+}
+
+.filters-button:hover {
+  border-color: #bdc6ca;
+  background-color: transparent;
+}
+
+.filters-button:active,
+.filters-button:focus {
+  border-color: #ee3643;
+  background-color: transparent;
+  outline: none;
+}

@@ -5,7 +5,7 @@
   <title>Католог товаров</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css?2">
+  <link rel="stylesheet" href="css/style.css?3">
 </head>
 <body>
   <header class="main-header">
@@ -85,8 +85,88 @@
     </div>
     <!-- /.header-third-line -->
   </header>
-  <main>
+  <main class="catalog-main container">
+    <ul class="bread-crumb">
+      <li class="item home">
+        <a href="index.html" class="link home-link"><span class="visually-hidden">Главная</span></a>
+      </li>
+      <li class="item">
+        <a href="catalog.html" class="link">Каталог</a>
+      </li>
+      <li class="item">
+        <a href="#" class="link">Инструмент</a>
+      </li>
+      <li class="item">
+        <a class="link current-link">Перфораторы</a>
+      </li>
+    </ul>
+    <h1 class="title">Перфораторы</h1>
+    <section class="filters-block">
+      <h2 class="title">Фильтр:</h2>
+      <form action="/echo" method="get" class="filters">
+        <fieldset class="range-filter">
+          <legend class="fieldset-title">Цена:</legend>
+          <div class="range-control">
+            <div class="scale">
+              <div class="bar"></div>
+            </div>
+            <div class="toggle toggle-min"></div>
+            <div class="toggle toggle-max"></div>
+          </div>
+          <div class="price-control">
+            <label for="min-price" class="visually-hidden">Минимальная цена</label>
+            <input type="text" value="0" name="min-price" id="min-price" class="price-control-input">
+            –
+            <label for="max-price" class="visually-hidden">Максимальная цена</label>
+            <input type="text" value="30000" name="max-price" id="max-price" class="price-control-input">
+          </div>
+        </fieldset>
+        <fieldset class="manufacturer-filter">
+          <legend class="fieldset-title">Производители:</legend>
+          <ul class="list">
+            <li class="list-item">
+              <input type="checkbox" name="bosch" class="list-input" id="bosch" checked>
+              <label for="bosch" class="list-label">Bosch</label>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" name="interscol" class="list-input" id="interscol">
+              <label for="interscol" class="list-label">Интерскол</label>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" name="makita" class="list-input" id="makita" checked>
+              <label for="makita" class="list-label">Makita</label>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" name="dewalt" class="list-input" id="dewalt">
+              <label for="dewalt" class="list-label">Dewalt</label>
+            </li>
+            <li class="list-item">
+              <input type="checkbox" name="hitachi" class="list-input" id="hitachi">
+              <label for="hitachi" class="list-label">Hitachi</label>
+            </li>
+          </ul>
+        </fieldset>
+        <fieldset class="power-filter">
+          <legend class="fieldset-title">Питание:</legend>
+          <ul class="list">
+            <li class="list-item">
+              <input type="radio" name="power-radio" class="list-input" id="accumulator" checked>
+              <label for="accumulator" class="list-label">Аккумуляторные</label>
+            </li>
+            <li class="list-item">
+              <input type="radio" name="power-radio" class="list-input" id="network">
+              <label for="network" class="list-label">Сетевые</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="button filters-button">Показать</button>
+      </form>
+    </section>
+    <!-- /.filters -->
+    <section class="goods">
 
+    </section>
+    <!-- /.goods -->
   </main>
   <footer>
 
