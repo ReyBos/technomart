@@ -5,7 +5,7 @@
   <title>Техномарт</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css?7">
+  <link rel="stylesheet" href="css/style.css?8">
 </head>
 <body>
   <header class="main-header">
@@ -323,11 +323,114 @@
           <img src="img/contacts-map.png" alt="Адрес офиса: г.Санкт-Петербург, ул.Б.Конюшенная, д.19" width="300" height="158" class="map-img">
         </p>
         <button class="button">Заблудились? Напишите нам!</button>
+        <div class="modal-full-map">
+          <img src="img/contacts-map-full.png" width="940" height="446" alt="Большая карта с адресом офиса">
+          <button class="close" tabindex="-1"><span class="visually-hidden">Закрыть</span></button>
+        </div>
+        <!-- /.full-map -->
       </section>
     </section>
   </main>
-  <footer>
-
+  <footer class="main-footer">
+    <div class="footer-first-line container">
+      <p class="logo-block">
+        <a class="logo">Техномарт</a>
+      </p>
+      <ul class="site-navigation">
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Компания</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Новости</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="catalog.html" class="site-navigation-link">Каталог</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Доставка</a>
+        </li>
+        <li class="site-navigation-item">
+          <a href="#" class="site-navigation-link">Контакты</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.footer-first-line -->
+    <div class="footer-second-line container">
+      <p class="contacts">
+        г. Санкт-Петербург, ул. Б.Конюшенная, д. 19/8 <br>
+        +7 (812) 555-05-55
+      </p>
+      <ul class="catalog-navigation">
+        <li class="catalog-navigation-item">
+          <a href="#" class="catalog-navigation-link">Материалы</a>
+        </li>
+        <li class="catalog-navigation-item">
+          <a href="#" class="catalog-navigation-link">Техника</a>
+        </li>
+        <li class="catalog-navigation-item">
+          <a href="#" class="catalog-navigation-link">Инструмент</a>
+        </li>
+        <li class="catalog-navigation-item">
+          <a href="#" class="catalog-navigation-link">Спецпредложения</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.footer-second-line -->
+    <div class="footer-third-line">
+      <div class="container">
+        <p class="copyrights">
+          &#169; 2010-2016 Компания «Техномарт» <br>
+          Все права защищены
+        </p>
+        <ul class="socials-list">
+          <li class="socials-item">
+            <a href="" class="socials-link vk">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="" class="socials-link facebook">
+              <span class="visually-hidden">Фейсбук</span>
+            </a>
+          </li>
+          <li class="socials-item">
+            <a href="" class="socials-link instagram">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </li>
+        </ul>
+        <table class="developers">
+          <tr>
+            <td class="developers-title">Обратная связь:</td>
+            <td class="developers-title">Разработано —</td>
+          </tr>
+          <tr>
+            <td class="developers-link">mail@htmlacademy.ru</td>
+            <td class="developers-link">htmlacademy.ru</td>
+          </tr>
+        </table>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.footer-third-line -->
   </footer>
+  <section class="modal-write-us">
+    <p class="block-input">
+      <label for="write-us-name">Ваше имя:</label>
+      <input type="text" name="name" id="write-us-name" placeholder="Представьтесь, пожалуйста" tabindex="-1">
+    </p>
+    <p class="block-input">
+      <label for="write-us-email">Ваш e-mail:</label>
+      <input type="email" name="email" id="write-us-email" placeholder="Для отправки ответа" tabindex="-1">
+    </p>
+    <p class="block-textarea">
+      <label for="write-us-message">Текст письма:</label>
+      <textarea name="message" id="write-us-message" placeholder="В свободной форме" tabindex="-1"></textarea>
+    </p class="block-textarea">
+    <p class="block-button">
+      <button class="button" type="submit" tabindex="-1">Отправить</button>
+    </p>
+    <button class="close" tabindex="-1"><span class="visually-hidden">Закрыть</span></button>
+  </section>
 </body>
 </html>
