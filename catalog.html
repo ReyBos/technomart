@@ -5,11 +5,85 @@
   <title>Католог товаров</title>
   <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
   <link rel="stylesheet" href="css/normalize.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.css?2">
 </head>
 <body>
-  <header>
-
+  <header class="main-header">
+    <div class="header-first-line">
+      <div class="container">
+        <p class="logo-block">
+          <a href="index.html" class="logo">Техномарт</a>
+        </p>
+        <form action="/echo" method="get" class="search-form">
+          <input type="text" class="search-input" placeholder="Поиск:">
+          <button type="submit" class="search-button"><span class="visually-hidden">Поиск</span></button>
+        </form>
+        <ul class="tabs-list">
+          <li class="tabs-item">
+            <a href="#" class="tabs-button tabs-bookmark">Закладки: <span class="tabs-count" id="bookmark-count">0</span></a>
+          </li>
+          <li class="tabs-item">
+            <a href="#" class="tabs-button tabs-button-fill tabs-cart">Корзина: <span class="tabs-count" id="cart-count">10</span></a>
+          </li>
+          <li class="tabs-item">
+            <a href="#" class="tabs-button tabs-order">Оформить заказ</a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.container -->
+    </div>
+    <!-- /.header-first-line -->
+    <div class="header-second-line container">
+      <p class="title">
+        Интернет-магазин <br>
+        строительных материалов <br>
+        и инструментов для ремонта
+      </p>
+      <div class="contacts">
+        <p class="contacts-telefone">+7 (812) 555-05-55</p>
+        <p class="contacts-address">г.Санкт-Петербург, ул.Б.Конюшенная, д.19/8</p>
+      </div>
+      <ul class="user-menu">
+        <li class="user-menu-item user">
+          <a href="" class="user-menu-link user-link">Равшан Джамшутович</a>
+        </li>
+        <li class="user-menu-item my-order">
+          <a href="" class="user-menu-link my-order-link">Мои заказы</a>
+        </li>
+        <li class="user-menu-item account">
+          <a href="" class="user-menu-link account-link">Личный кабинет</a>
+        </li>
+      </ul>
+    </div>
+    <!-- /.header-second-line -->
+    <div class="header-third-line container">
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="site-navigation-item">
+            <a href="index.html" class="site-navigation-link">Главная</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#" class="site-navigation-link">Компания</a>
+          </li>
+          <li class="site-navigation-item">
+            <a class="site-navigation-link  current-link">Каталог</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#" class="site-navigation-link">Новости</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#" class="site-navigation-link">Спецпредложения</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#" class="site-navigation-link">Доставка</a>
+          </li>
+          <li class="site-navigation-item">
+            <a href="#" class="site-navigation-link">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- /.header-third-line -->
   </header>
   <main>
 
