@@ -1,9 +1,9 @@
 ﻿# technomart
 Сверстана главная страница и страница каталога.
 
-http://andreybosyy.ru/technomart/index.html
+https://reybos.github.io/technomart/
 
-http://andreybosyy.ru/technomart/catalog.html
+https://reybos.github.io/technomart/catalog.html
 
 Шаблоны: 
 
